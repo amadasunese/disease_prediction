@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block content %}
+   
+
+    <!-- FAQ Container -->
+<div class="faq-container my-5">
+    <div class="faq-header text-center mb-4">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+    </div>
+    <div class="accordion" id="faqAccordion">
+
+        <!-- FAQ 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq1Header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                    What does this tool do?
+                </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Header">
+                <div class="accordion-body">
+                    The tool predicts the likelihood of heart disease based on your input data using machine learning.
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq2Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                    How reliable are the predictions?
+                </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Header">
+                <div class="accordion-body">
+                    While the model is trained on a large dataset, results are indicative and should be confirmed with a medical professional.
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq3Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                    What data do I need to input?
+                </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3Header">
+                <div class="accordion-body">
+                    Provide details like age, blood pressure, cholesterol levels, and physical activity status for accurate predictions.
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq4Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                    How should I interpret the results?
+                </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4Header">
+                <div class="accordion-body">
+                    Your results will fall into a risk category (low, moderate, or high). Recommendations are provided for each category.
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq5Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                    Is my data safe?
+                </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5Header">
+                <div class="accordion-body">
+                    Yes, we use encryption and secure protocols to protect your information, and we do not store or share it.
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq6Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                    What should I do if my risk is moderate or high?
+                </button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" aria-labelledby="faq6Header">
+                <div class="accordion-body">
+                    Consult a healthcare professional for further evaluation and personalized advice.
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional FAQ Items -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq7Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                    Can heart disease be prevented?
+                </button>
+            </h2>
+            <div id="faq7" class="accordion-collapse collapse" aria-labelledby="faq7Header">
+                <div class="accordion-body">
+                    Yes, heart disease can often be prevented by maintaining a healthy lifestyle, including a balanced diet, regular exercise, avoiding tobacco use, and managing stress levels.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Additional Example -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq8Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+                    How can I reduce my cholesterol levels?
+                </button>
+            </h2>
+            <div id="faq8" class="accordion-collapse collapse" aria-labelledby="faq8Header">
+                <div class="accordion-body">
+                    Reducing cholesterol involves eating a heart-healthy diet, exercising regularly, avoiding saturated and trans fats, and possibly taking prescribed medications like statins.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    {% endblock %}
